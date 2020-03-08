@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Build
+import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.appcompat.app.AppCompatActivity
 
@@ -17,3 +18,8 @@ fun Context.extGetDrawable(@DrawableRes drawableId: Int): Drawable =
     } else {
         resources.getDrawable(drawableId)
     }
+
+
+fun String.exToast(context: Context) {
+    Toast.makeText(context, this, Toast.LENGTH_LONG).show()
+}

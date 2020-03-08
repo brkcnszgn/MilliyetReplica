@@ -4,10 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.milliyetreplica.R
-import com.example.milliyetreplica.model.AdsModel
 import com.example.milliyetreplica.model.BaseNewsModel
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
 
@@ -26,8 +24,8 @@ class AdsBannerViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
     ) {
 
         MobileAds.initialize(itemView.context)
-        mAdView.adSize = AdSize.BANNER
-        mAdView.adUnitId = (newsModel as AdsModel).adUnitId
+//        mAdView.adSize = AdSize.BANNER
+//        mAdView.adUnitId = (newsModel as AdsModel).adUnitId
         val adRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
     }
