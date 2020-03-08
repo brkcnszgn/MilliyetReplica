@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtNewsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="16dp"
+            tools:text="Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!Ve Miray Daner Açıkladı!!!!!" />
+
+        <ImageView
+            android:id="@+id/imgNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_launcher"
+            android:minWidth="150dp"
+            android:minHeight="100dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
