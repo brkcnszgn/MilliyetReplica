@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.milliyetreplica"
-        minSdkVersion 22
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -43,4 +43,6 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$glide_glide_version"
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_compiler_version"
     implementation 'com.google.android.gms:play-services-ads:18.1.1'
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.tizisdeepan:dots:1.0.1'
 }

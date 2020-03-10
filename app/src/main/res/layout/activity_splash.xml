@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/splash"
     android:layout_height="match_parent"
     tools:context=".ui.SplashActivity">
 
@@ -12,5 +13,18 @@
         android:layout_gravity="center"
         android:text="@string/app_name"
         android:textSize="36sp" />
+
+    <!--    <com.github.jorgecastillo.FillableLoader-->
+    <!--        android:id="@+id/fillableLoader"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        app:fl_fillColor="#4CAF50"-->
+    <!--        app:fl_strokeColor="#ffffff"-->
+    <!--        app:fl_strokeWidth="1dp"-->
+    <!--        app:fl_originalWidth="1079"-->
+    <!--        app:fl_originalHeight="540"-->
+    <!--        app:fl_clippingTransform="plain"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        />-->
 
 </FrameLayout>

@@ -1,10 +1,8 @@
 package com.example.milliyetreplica.mock
 
+
 import com.example.milliyetreplica.enums.NewsType
-import com.example.milliyetreplica.model.AdsModel
-import com.example.milliyetreplica.model.BaseNewsModel
-import com.example.milliyetreplica.model.FragmentModel
-import com.example.milliyetreplica.model.NewsModel
+import com.example.milliyetreplica.model.*
 import com.example.milliyetreplica.ui.NewFragment
 import com.google.android.gms.ads.AdSize
 
@@ -41,9 +39,42 @@ object MockData {
         return titleList
     }
 
+    fun getNewSliderList(sliderImageSize: Int): List<ImageModel> {
+        val imageList = ArrayList<ImageModel>()
+        // imageList.add(SlideModel("String Url" or R.drawable)
+        // imageList.add(SlideModel("String Url" or R.drawable, "title") Also you can add title
+        val imageModel = ImageModel(
+            "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
+            NewsType.SLIDER.id
+        )
+        val imageModel2 = ImageModel(
+            "https://i2.milimaj.com/i/milliyet/75/871x340/5e63f8b9554287160c0d0aff.jpg",
+            NewsType.SLIDER.id
+        )
+        val imageModel3 = ImageModel(
+            "https://i2.milimaj.com/i/milliyet/75/871x340/5e63f8b9554287160c0d0aff.jpg",
+            NewsType.SLIDER.id
+        )
+        //  newsList.add(sliderImageModel)
+//newsList.addAll(imageList)
+        imageList.add(imageModel)
+        imageList.add(imageModel2)
+        imageList.add(imageModel3)
+        return imageList
+    }
+
     fun getNewsList(newsListSize: Int): List<BaseNewsModel> {
         val newsList = ArrayList<BaseNewsModel>()
         repeat(newsListSize) {
+
+            //   val sliderImageModel = SliderModel("https://i2.milimaj.com/i/milliyet/75/871x340/5e63f8b9554287160c0d0aff.jpg","","",NewsType.SLIDER.id)
+//            val imageList = ArrayList<SliderModel>()
+            // imageList.add(SlideModel("String Url" or R.drawable)
+            // imageList.add(SlideModel("String Url" or R.drawable, "title") Also you can add title
+//            imageList.add(SliderModel("https://1.bp.blogspot.com/-GUZsgr8my50/XJUWOhyHyaI/AAAAAAAABUo/bljp3LCS3SUtj-judzlntiETt7G294WcgCLcBGAs/s1600/fox.jpg", 0,"",NewsType.SLIDER.id))
+//            imageList.add(SliderModel("https://2.bp.blogspot.com/-CyLH9NnPoAo/XJUWK2UHiMI/AAAAAAAABUk/D8XMUIGhDbwEhC29dQb-7gfYb16GysaQgCLcBGAs/s1600/tiger.jpg",1,"",NewsType.SLIDER.id))
+//            imageList.add(SliderModel("https://3.bp.blogspot.com/-uJtCbNrBzEc/XJUWQPOSrfI/AAAAAAAABUs/ZlReSwpfI3Ack60629Rv0N8hSrPFHb3TACLcBGAs/s1600/elephant.jpg", 2,"",NewsType.SLIDER.id))
+
 
             val adsModel = AdsModel(
                 AdSize.BANNER,
@@ -79,7 +110,15 @@ object MockData {
                 "Ertelendi! Kolay alınmış bir karar değil",
                 NewsType.SMALL_NEWS.id
             )
-
+//            val imageModel = ImageModel("https://i2.milimaj.com/i/milliyet/75/871x340/5e63f8b9554287160c0d0aff.jpg",NewsType.SLIDER.id)
+            val imageModel2 = ImageModel(
+                "https://imgfinans.milliyet.com.tr/i/haber/f_dfdf_321421462285.jpg",
+                NewsType.SLIDER.id
+            )
+            //  newsList.add(sliderImageModel)
+//newsList.addAll(imageList)
+//            newsList.add(imageModel)
+            newsList.add(imageModel2)
             newsList.add(adsModel)
             newsList.add(smallNewsModel1)
             newsList.add(smallNewsModel2)
@@ -87,6 +126,7 @@ object MockData {
             newsList.add(smallNewsModel4)
             newsList.add(bigNewsModel)
         }
+
 
         return newsList
     }

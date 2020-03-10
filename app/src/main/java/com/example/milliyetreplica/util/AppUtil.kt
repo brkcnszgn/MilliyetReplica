@@ -21,5 +21,5 @@ fun Context.extGetDrawable(@DrawableRes drawableId: Int): Drawable =
 
 
 fun String.exToast(context: Context) {
-    Toast.makeText(context, this, Toast.LENGTH_LONG).show()
+    Toast.makeText(context, this, Toast.LENGTH_SHORT).show()
 }
